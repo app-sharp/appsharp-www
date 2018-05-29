@@ -1,0 +1,50 @@
+.product-detail {
+  padding: $large 0;
+
+  + .footer {
+    @media screen and (min-height: 594px) {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+}
+
+.product {
+  lost-align: center;
+
+  &.online-business-card p:after {
+    display: block;
+    background: url(/img/products/five-stars.jpg) no-repeat left center;
+    background-size: 81px 13px;
+    padding: 1px 0 0 97px;
+    content: 'PortaSpa.net';
+    color: $lightGrey;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+
+  .tile {
+    lost-column: 4/12;
+
+    img {
+      box-shadow: 0 4px $tiny 0 rgba(0,0,0,0.2);
+      border-radius: $borderRadius;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  .copy {
+    lost-column: 7/12;
+    lost-offset: 1/12;
+
+    h2 {
+      margin: 0 0 27px 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

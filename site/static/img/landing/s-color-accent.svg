@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1190px" height="1179px" viewBox="0 0 1190 1179" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>s-color-accent</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="85.7133676%" y1="-16.6689974%" x2="0.00754433521%" y2="83.3354474%" id="linearGradient-1">
+            <stop stop-color="#00ACED" offset="0%"></stop>
+            <stop stop-color="#2D3190" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="116.675461%" y1="87.4972302%" x2="49.9940144%" y2="37.4887868%" id="linearGradient-2">
+            <stop stop-color="#EB287B" offset="0%"></stop>
+            <stop stop-color="#642D90" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="116.670672%" y1="87.4968256%" x2="49.9948737%" y2="37.4866351%" id="linearGradient-3">
+            <stop stop-color="#EB287B" offset="0%"></stop>
+            <stop stop-color="#642D90" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="14.2871984%" y1="116.668484%" x2="99.9947403%" y2="16.6664889%" id="linearGradient-4">
+            <stop stop-color="#00ACED" offset="0%"></stop>
+            <stop stop-color="#2D3190" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="44.7017406%" y1="11.6623734%" x2="0%" y2="46.3089082%" id="linearGradient-5">
+            <stop stop-color="#EE4036" offset="0%"></stop>
+            <stop stop-color="#F05A28" offset="43.3422686%"></stop>
+            <stop stop-color="#F6921E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="appsharp-landing" transform="translate(0.000000, -530.000000)">
+            <g id="values" transform="translate(-269.000000, 530.000000)">
+                <g id="s-color-accent">
+                    <polygon id="Mask" fill="#FFFFFF" points="1459 119 786 119 681.753906 227.761719 844.492188 437.59375 259 963 1459 963"></polygon>
+                    <g id="Group-2">
+                        <polygon id="Fill-19" fill="url(#linearGradient-1)" points="696.565429 0 508 188.037688 570.869142 376 948 0"></polygon>
+                        <polygon id="Fill-22" fill="url(#linearGradient-2)" points="948 0 828.542725 118.9375 948 118.9375"></polygon>
+                        <polygon id="Fill-25" fill="url(#linearGradient-3)" points="571 375.462412 759 438 759 188"></polygon>
+                        <polygon id="Fill-28" fill="url(#linearGradient-4)" points="0 1196 251.426172 1196 1010 437.987438 947.122459 250"></polygon>
+                        <polygon id="Fill-31" fill="url(#linearGradient-5)" points="759 438 947 250.529231 759 188"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

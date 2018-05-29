@@ -1,0 +1,15 @@
+<article class="product {{ .product | urlize }} container">
+  <div class="tile">
+    <img src="{{ .img }}"/>
+  </div>
+  <div class="copy">
+    <h2>
+      {{ .product }}
+      <span class="subhead">{{ .subhead }}</span>
+    </h2>
+    <p>
+      {{ .description }}<br><br>
+      <strong>{{ .highlight }}</strong>
+    </p>
+  </div>
+</article>

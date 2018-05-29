@@ -1,0 +1,129 @@
+.landing {
+
+  .hero {
+    background: $offWhite url(/img/landing/hero-bg.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    margin-top: -$micro;
+
+    h1 {
+      max-width: 680px;
+      margin: $xxl auto 222px auto;
+
+      .w {
+        position: relative;
+
+        &:before {
+          content: '';
+          background: url(/img/landing/splash.png) no-repeat bottom right;
+          background-size: 90px;
+          position: absolute;
+          height: 90px;
+          width: 90px;
+          top: -44px;
+          left: -36px;
+        }
+      }
+
+      .period {
+        color: $pink;
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          border-radius: 1000px;
+          border: 80px solid white;
+          height: 100px;
+          width: 100px;
+          top: -90px;
+          left: -120px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+
+  .statement {
+    background: $darkGrey url('/img/landing/statement-bg.jpg') repeat 0 0;
+    background-size: 1440px 811px;
+    padding: $xl 0 375px 0;
+    position: relative;
+    margin-bottom: -191px;
+
+    &:after {
+      content: '';
+      background: white;
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      left: 50%;
+      top: 0;
+    }
+
+    .container {
+      position: relative;
+
+      @media screen and (min-width: 1392px) {
+        position: initial;
+      }
+    }
+
+    article {
+      lost-column: 5/12;
+      lost-offset: 7/12;
+      z-index: 3;
+
+      @media screen and (min-width: 1600px) {
+        lost-column: 1/2;
+        lost-offset: 1/2;
+      }
+
+      @media screen and (min-width: 1900px) {
+        lost-column: 7/12;
+        lost-offset: 5/12;
+      }
+    }
+
+    .s-color {
+      position: absolute;
+      top: -223px;
+      right: 0;
+      z-index: 2;
+
+      @media screen and (min-width: 1392px) {
+        top: -119px;
+        left: 0;
+        right: initial;
+      }
+    }
+
+    .mooseheads {
+      width: 100%;
+      height: auto;
+      margin: -$micro -$tiny -$tiny -$tiny;
+      max-width: 422px;
+    }
+  }
+
+  .products {
+    position: relative;
+    z-index: 3;
+
+    .s-mono {
+      position: absolute;
+      top: -300px;
+      left: calc(50% + 250px);
+
+      @media screen and (min-width: 1468px) {
+        right: 0;
+        left: initial;
+      }
+    }
+
+    .product {
+      margin-bottom: $xl;
+    }
+  }
+}

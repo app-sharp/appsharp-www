@@ -1,0 +1,17 @@
+<header class="header">
+  <div class="container">
+    <a href="/" class="appsharp-logo"><img src="/img/logo.svg" alt="AppSharp"/></a>
+    <nav>
+      <button class="nav-btn dropdown" alt="Products">
+        Products <img src="/img/caret.svg"/>
+        <div class="dropdown-content">
+          {{ range where .Data.Pages.ByWeight "Section" "products"}}
+            <a href="{{ .Permalink }}" class="sub nav-btn">{{ .Params.product }}</a>
+          {{ end }}
+        </div>
+      </button>
+      <a href="/about" class="nav-btn" alt="About">About</a>
+      <a href="/contact" class="nav-btn" alt="Contact">Contact</a>
+    </nav>
+  </div>
+</header>

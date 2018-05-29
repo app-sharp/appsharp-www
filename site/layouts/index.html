@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="landing">
+  <section class="hero">
+    <div class="container">
+      <h1><span class="w">W</span>e build software to help small businesses thrive<span class="period">.</span></h1>
+    </div>
+  </section>
+  <section class="statement">
+    <div class="container">
+      <img class="s-color" src="/img/landing/s-color-accent.svg"/>
+      <article>
+        <img class="mooseheads" src="/img/landing/mooseheads.png"/>
+        <h2>Identity Management is in our DNA.</h2>
+        <p>Whether your business has been established for decades or brand new, we help innovate solutions to save your business time and help you focus on what matters.</p>
+      </article>
+    </div>
+  </section>
+  <section class="products">
+    <img class="s-mono" src="/img/s-mono-accent.svg"/>
+    {{ range where .Data.Pages.ByWeight "Section" "products"}}
+      {{ partial "product" .Params }}
+    {{ end }}
+  </section>
+</div>
+{{end}}

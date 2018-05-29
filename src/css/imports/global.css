@@ -1,0 +1,74 @@
+@lost gutter 20px;
+@lost flexbox flex;
+
+.container {
+  lost-center: 940px;
+  padding: 0 $small;
+}
+
+html,
+body,
+section {
+  margin: 0;
+  padding: 0;
+  font-family: $galaxie;
+  font-size: $tiny;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nav {
+  padding: $small;
+
+  img {
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet) {
+      margin: 0;
+    }
+  }
+}
+
+.clearfix {
+  lost-utility: clearfix;
+}
+
+.hidden {
+  display: none;
+}
+
+button,
+button:hover,
+button:focus,
+button:visited {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+h1 {
+  font-size: 52px;
+  line-height: $large;
+  font-weight: $regular;
+}
+
+h2 {
+  font-size: 34px;
+  line-height: $medium;
+  letter-spacing: -0.4px;
+  font-weight: $regular;
+
+  .subhead {
+    display: block;
+    font-size: 12px;
+    line-height: $tiny;
+    margin-top: 10px;
+  }
+}
+
+p {
+  line-height: $small;
+}
