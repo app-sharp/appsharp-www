@@ -5,7 +5,7 @@
       <button class="nav-btn dropdown" alt="Products">
         Products <img src="/img/caret.svg"/>
         <div class="dropdown-content">
-          {{ range where .Data.Pages.ByWeight "Section" "products"}}
+          {{ range where .Site.RegularPages.ByWeight "Section" "products" }}
             <a href="{{ .Permalink }}" class="sub nav-btn">{{ .Params.product }}</a>
           {{ end }}
         </div>

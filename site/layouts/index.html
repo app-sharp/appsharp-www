@@ -15,7 +15,7 @@
       </article>
     </div>
   </section>
-  <section class="products">
+  <section id="products" class="products">
     <img class="s-mono" src="/img/s-mono-accent.svg"/>
     {{ range where .Data.Pages.ByWeight "Section" "products"}}
       {{ partial "product" .Params }}

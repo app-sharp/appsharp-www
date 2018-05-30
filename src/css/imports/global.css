@@ -6,6 +6,10 @@
   padding: 0 $small;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 html,
 body,
 section {
@@ -15,6 +19,7 @@ section {
   font-size: $tiny;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
 }
 
 .nav {
@@ -50,16 +55,27 @@ button:visited {
 }
 
 h1 {
-  font-size: 52px;
-  line-height: $large;
   font-weight: $regular;
+  font-size: 34px;
+  line-height: $medium;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 52px;
+    line-height: $large;
+  }
 }
 
 h2 {
-  font-size: 34px;
-  line-height: $medium;
-  letter-spacing: -0.4px;
   font-weight: $regular;
+  font-size: $small;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 34px;
+    line-height: $medium;
+    letter-spacing: -0.4px;
+  }
 
   .subhead {
     display: block;

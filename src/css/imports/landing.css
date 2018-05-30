@@ -4,12 +4,20 @@
     background: $offWhite url(/img/landing/hero-bg.jpg) no-repeat center;
     background-size: cover;
     text-align: center;
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 95%);
     margin-top: -$micro;
+
+    @media screen and (min-width: $tablet) {
+      clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    }
 
     h1 {
       max-width: 680px;
-      margin: $xxl auto 222px auto;
+      margin: $xl auto;
+
+      @media screen and (min-width: $tablet) {
+        margin: $xxl auto 222px auto;
+      }
 
       .w {
         position: relative;
@@ -17,12 +25,20 @@
         &:before {
           content: '';
           background: url(/img/landing/splash.png) no-repeat bottom right;
-          background-size: 90px;
+          background-size: $medium;
           position: absolute;
-          height: 90px;
-          width: 90px;
-          top: -44px;
-          left: -36px;
+          height: $medium;
+          width: $medium;
+          top: -20px;
+          left: -18px;
+
+          @media screen and (min-width: $tablet) {
+            background-size: 90px;
+            height: 90px;
+            width: 90px;
+            top: -44px;
+            left: -36px;
+          }
         }
       }
 
@@ -34,32 +50,57 @@
           content: '';
           position: absolute;
           border-radius: 1000px;
-          border: 80px solid white;
-          height: 100px;
-          width: 100px;
-          top: -90px;
-          left: -120px;
+          border: 40px solid white;
+          height: $large;
+          width: $large;
+          top: -46px;
+          left: -66px;
           z-index: -1;
+
+          @media screen and (min-width: $tablet) {
+            border-width: 80px;
+            height: 100px;
+            width: 100px;
+            top: -90px;
+            left: -120px;
+          }
         }
       }
     }
   }
 
   .statement {
-    background: $darkGrey url('/img/landing/statement-bg.jpg') repeat 0 0;
-    background-size: 1440px 811px;
-    padding: $xl 0 375px 0;
-    position: relative;
-    margin-bottom: -191px;
+    padding: $xl 0;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      text-align: left;
+      position: relative;
+      background: $darkGrey url('/img/landing/statement-bg.jpg') repeat 0 0;
+      background-size: 1440px 811px;
+      margin-bottom: -191px;
+      padding-bottom: 375px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 945px) {
+      padding-bottom: 358px;
+    }
 
     &:after {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 50%;
-      height: 100%;
-      left: 50%;
-      top: 0;
+      @media screen and (min-width: $tablet) {
+        content: '';
+        background: white;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        left: 50%;
+        top: 0;
+      }
+
+      @media screen and (min-width: 2300px) {
+        left: 25%;
+        width: 75%;
+      }
     }
 
     .container {
@@ -71,9 +112,12 @@
     }
 
     article {
-      lost-column: 5/12;
-      lost-offset: 7/12;
-      z-index: 3;
+
+      @media screen and (min-width: $tablet) {
+        lost-column: 5/12;
+        lost-offset: 7/12;
+        z-index: 3;
+      }
 
       @media screen and (min-width: 1600px) {
         lost-column: 1/2;
@@ -87,10 +131,15 @@
     }
 
     .s-color {
-      position: absolute;
-      top: -223px;
-      right: 0;
-      z-index: 2;
+      display: none;
+
+      @media screen and (min-width: $tablet) {
+        display: initial;
+        position: absolute;
+        top: -223px;
+        right: 0;
+        z-index: 2;
+      }
 
       @media screen and (min-width: 1392px) {
         top: -119px;
@@ -112,9 +161,14 @@
     z-index: 3;
 
     .s-mono {
-      position: absolute;
-      top: -300px;
-      left: calc(50% + 250px);
+      display: none;
+
+      @media screen and (min-width: $tablet) {
+        display: initial;
+        position: absolute;
+        top: -300px;
+        left: calc(50% + 250px);
+      }
 
       @media screen and (min-width: 1468px) {
         right: 0;

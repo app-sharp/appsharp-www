@@ -12,20 +12,37 @@
 
 .product {
   lost-align: center;
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
 
   &.online-business-card p:after {
     display: block;
-    background: url(/img/products/five-stars.jpg) no-repeat left center;
+    background: url(/img/products/five-stars.jpg) no-repeat top center;
     background-size: 81px 13px;
-    padding: 1px 0 0 97px;
+    padding: $tiny 0 0 0;
     content: 'PortaSpa.net';
     color: $lightGrey;
     font-size: 12px;
     margin-top: 12px;
+
+    @media screen and (min-width: $tablet) {
+      background-position: left center;
+      padding: 1px 0 0 97px;
+    }
   }
 
   .tile {
-    lost-column: 4/12;
+    padding-bottom: $medium;
+    width: $xxl;
+
+    @media screen and (min-width: $tablet) {
+      padding-bottom: initial;
+      width: initial;
+      lost-column: 4/12;
+    }
 
     img {
       box-shadow: 0 4px $tiny 0 rgba(0,0,0,0.2);
@@ -36,8 +53,10 @@
   }
 
   .copy {
-    lost-column: 7/12;
-    lost-offset: 1/12;
+    @media screen and (min-width: $tablet) {
+      lost-column: 7/12;
+      lost-offset: 1/12;
+    }
 
     h2 {
       margin: 0 0 27px 0;

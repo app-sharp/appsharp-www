@@ -4,12 +4,31 @@
   position: relative;
   z-index: 100;
 
+  .appsharp-logo {
+    margin: 0 auto;
+
+    @media screen and (min-width: $mobile) {
+      margin: initial;
+    }
+  }
+
   .container {
     lost-align: vertical;
   }
 
   nav {
+    display: block;
     lost-align: right;
+    margin: $tiny auto $micro auto;
+
+    @media screen and (min-width: $mobile) {
+      margin: $tiny 0 $micro 0;
+    }
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      margin: initial;
+    }
   }
 
   .nav-btn {
@@ -43,18 +62,32 @@
   }
 
   .dropdown {
-    transform: translateY(50%);
-    margin-top: -18px;
-    padding-bottom: $small;
+    @media screen and (max-width: $tabletMax) {
+      &:not(.sub){
+        margin-left: 0;
+      }
+    }
+
+    @media screen and (min-width: $tablet) {
+      padding-bottom: $small;
+      margin-top: -18px;
+      transform: translateY(50%);
+    }
 
     &:hover .dropdown-content {
-      display: block;
-      transform: translateY(0);
-      opacity: 1;
+      @media screen and (min-width: $tablet) {
+        display: block;
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
 
     img {
       vertical-align: middle;
+
+      @media screen and (max-width: $tabletMax) {
+        display: none;
+      }
     }
   }
 
@@ -69,5 +102,10 @@
     transition: transform .2s;
     opacity: 0;
     position: absolute;
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: initial;
+    }
   }
 }
