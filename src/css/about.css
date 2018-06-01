@@ -1,4 +1,10 @@
 .about {
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
+
   h1, h2 {
     @media screen and (min-width: $tablet) {
       font-size: 38px;
@@ -13,23 +19,40 @@
   }
 
   .hero {
-    padding: $xl 0 $xxl 0;
+    padding: $medium 0 $large 0;
 
-    .copy {
-      lost-column: 7/12;
+    @media screen and (min-width: $tablet) {
+      padding: $xl 0 $xxl 0;
     }
 
+    .copy {
+      @media screen and (min-width: $tablet) {
+        lost-column: 7/12;
+      }
+    }
 
     .img {
-      lost-column: 5/12;
+      display: none;
+
+      @media screen and (min-width: $tablet) {
+        display: initial;
+        lost-column: 5/12;
+      }
     }
 
     img {
-      position: absolute;
-      top: 0;
       width: 505px;
       height: 648px;
-      z-index: -1;
+
+      @media screen and (min-width: $tablet) {
+        position: absolute;
+        top: $large;
+        z-index: -1;
+      }
+
+      @media screen and (min-width: $desktop) {
+        top: 0;
+      }
     }
   }
 
@@ -47,7 +70,12 @@
       padding: $xl $large;
 
       > div {
-        lost-column: 1/2;
+        margin: 0 auto;
+
+        @media screen and (min-width: $tablet) {
+          margin: initial;
+          lost-column: 1/2;
+        }
       }
     }
 
@@ -67,6 +95,11 @@
 
     .partners span {
       letter-spacing: 2.63px;
+      margin-bottom: $medium;
+
+      @media screen and (min-width: $tablet) {
+        margin-bottom: -4px;
+      }
     }
 
     .businesses span {
@@ -75,16 +108,25 @@
   }
 
   .team {
-    padding: $xl 0;
+    padding: $large 0;
+
+    @media screen and (min-width: $tablet) {
+      padding: $xl 0;
+    }
 
     h1 {
+      width: 100%;
       margin: $small 0 52px 0;
     }
 
     .employee {
 
       &:not(:last-child) {
-        margin-bottom: $medium;
+        margin-bottom: $large;
+
+        @media screen and (min-width: $tablet) {
+          margin-bottom: $medium;
+        }
       }
 
       @media screen and (min-width: $tablet) {
@@ -96,8 +138,10 @@
     .img {
       padding-bottom: $medium;
       width: $xxl;
+      margin: 0 auto;
 
       @media screen and (min-width: $tablet) {
+        margin: initial;
         padding-bottom: initial;
         width: initial;
         lost-column: 5/12;
