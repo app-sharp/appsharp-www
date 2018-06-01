@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="contact">
+  <section class="hero">
+    <div class="container">
+      <h2>Let's get in touch<span class="period">.</span></h2>
+      <form name="contact" method="POST" netlify>
+        <label class="name">Name<input type="text"/></label>
+        <label class="company">Company<input type="text"/></label>
+        <label class="subject">Subject<input type="text"/></label>
+        <label class="message">Message<textarea rows="6"></textarea></label>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+</div>
+{{end}}

@@ -1,0 +1,128 @@
+.about {
+  h1, h2 {
+    @media screen and (min-width: $tablet) {
+      font-size: 38px;
+      line-height: 46px;
+    }
+  }
+
+  h1 {
+    @media screen and (min-width: $tablet) {
+      letter-spacing: -1px;
+    }
+  }
+
+  .hero {
+    padding: $xl 0 $xxl 0;
+
+    .copy {
+      lost-column: 7/12;
+    }
+
+
+    .img {
+      lost-column: 5/12;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      width: 505px;
+      height: 648px;
+      z-index: -1;
+    }
+  }
+
+  .numbers {
+    background: $darkGrey url('/img/landing/statement-bg.jpg') repeat 0 0;
+    background-size: 1440px 811px;
+    color: white;
+    font-family: $heebo;
+    font-weight: $black;
+    text-align: center;
+
+    .container {
+      background: $blue;
+      box-sizing: border-box;
+      padding: $xl $large;
+
+      > div {
+        lost-column: 1/2;
+      }
+    }
+
+    strong {
+      font-size: 76px;
+      line-height: 67px;
+      letter-spacing: -1.4px;
+    }
+
+    span {
+      font-size: $tiny;
+      text-transform: uppercase;
+      display: block;
+      padding-left: $micro;
+      margin: 13px 0 -4px 0;
+    }
+
+    .partners span {
+      letter-spacing: 2.63px;
+    }
+
+    .businesses span {
+      letter-spacing: 7.48px;
+    }
+  }
+
+  .team {
+    padding: $xl 0;
+
+    h1 {
+      margin: $small 0 52px 0;
+    }
+
+    .employee {
+
+      &:not(:last-child) {
+        margin-bottom: $medium;
+      }
+
+      @media screen and (min-width: $tablet) {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .img {
+      padding-bottom: $medium;
+      width: $xxl;
+
+      @media screen and (min-width: $tablet) {
+        padding-bottom: initial;
+        width: initial;
+        lost-column: 5/12;
+      }
+    }
+
+    img {
+      box-shadow: 0 4px $tiny 0 rgba(0,0,0,0.2);
+      border-radius: $borderRadius;
+      width: 100%;
+      max-width: 380px;
+    }
+
+    .copy {
+      @media screen and (min-width: $tablet) {
+        lost-column: 7/12;
+      }
+
+      h2 {
+        margin: 0 0 27px 0;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

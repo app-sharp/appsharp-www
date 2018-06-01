@@ -17,6 +17,7 @@ module.exports = {
   light: 300,
   regular: 400,
   bold: 500,
+  black: 700,
 
   // fonts
   heebo: "'Heebo', sans-serif",
