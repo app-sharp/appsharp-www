@@ -1,5 +1,14 @@
 .contact {
-  padding: $small 0;
+  padding: $small 0 $large 0;
+
+  + .footer {
+    @media screen and (min-height: 1002px) and (max-width: $tabletMax),
+    (min-height: 890px) and (min-width: $tablet) {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  }
 
   h2 {
     text-align: center;
@@ -8,8 +17,12 @@
   }
 
   form {
-    lost-column: 1/2;
-    lost-offset: 1/4;
+    width: 100%;
+
+    @media screen and (min-width: $desktop) {
+      lost-column: 1/2;
+      lost-offset: 1/4;
+    }
   }
 
   label {
@@ -20,7 +33,9 @@
 
     &.name,
     &.company {
-      lost-column: 1/2;
+      @media screen and (min-width: $tablet) {
+        lost-column: 1/2;
+      }
     }
   }
 
