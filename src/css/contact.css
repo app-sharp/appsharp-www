@@ -36,7 +36,7 @@
     font-size: 18px;
 
     &.name,
-    &.company {
+    &.email {
       @media screen and (min-width: $tablet) {
         lost-column: 1/2;
       }
