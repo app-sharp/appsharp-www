@@ -1,4 +1,4 @@
-<article class="product {{ .product | urlize }} container">
+<a href="{{ .linksto }}" class="product {{ .product | urlize }} container">
   <div class="tile">
     <img src="{{ .img }}"/>
   </div>
@@ -12,4 +12,4 @@
       <strong>{{ .highlight }}</strong>
     </p>
   </div>
-</article>
+</a>

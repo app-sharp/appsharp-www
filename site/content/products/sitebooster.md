@@ -2,6 +2,7 @@
 url: "/sitebooster/"
 img: "/img/products/sitebooster.jpg"
 weight: 2
+linksto: "https://sitebooster.com"
 
 product: "SiteBooster"
 subhead: "Identity management for Small Businesses"

@@ -2,6 +2,7 @@
 url: "/footprint/"
 img: "/img/products/footprint.jpg"
 weight: 1
+linksto: "https://footprint.appsharp.com"
 
 product: "Footprint"
 subhead: "Online Listing Solution for Enterprises"

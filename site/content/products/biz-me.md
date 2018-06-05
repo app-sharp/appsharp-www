@@ -2,6 +2,7 @@
 url: "/biz-me/"
 img: "/img/products/biz-me.jpg"
 weight: 5
+linksto: "https://www.biz.me"
 
 product: "Biz.me"
 subhead: "Small Business Publication"

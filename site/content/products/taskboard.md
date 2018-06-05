@@ -2,6 +2,7 @@
 url: "/taskboard/"
 img: "/img/products/taskboard.jpg"
 weight: 2
+linksto: "https://app.tasksharp.com"
 
 product: "Taskboard"
 subhead: "Workforce automation management platform"
