@@ -6,7 +6,7 @@
         Products <img src="/img/caret.svg"/>
         <div class="dropdown-content">
           {{ range where .Site.RegularPages.ByWeight "Section" "products" }}
-            <a href="{{ .Permalink }}" class="sub nav-btn">{{ .Params.product }}</a>
+            <a href="{{ .Params.linksto }}" class="sub nav-btn">{{ .Params.product }}</a>
           {{ end }}
         </div>
       </button>
