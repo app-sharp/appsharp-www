@@ -57,8 +57,8 @@
   }
 
   .numbers {
-    background: $darkGrey url('/img/landing/statement-bg.jpg') repeat 0 0;
-    background-size: 1440px 811px;
+    background: $darkGrey url('/img/about/numbers-bg.jpg') repeat -1px -1px;
+    background-size: 501px 309px;
     color: white;
     font-family: $heebo;
     font-weight: $black;
@@ -68,6 +68,8 @@
       background: $blue;
       box-sizing: border-box;
       padding: $xl $large;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
 
       > div {
         margin: 0 auto;

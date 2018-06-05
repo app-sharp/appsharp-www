@@ -76,7 +76,7 @@
       text-align: left;
       position: relative;
       background: $darkGrey url('/img/landing/statement-bg.jpg') repeat 0 0;
-      background-size: 1440px 811px;
+      background-size: 1050px 600px;
       margin-bottom: -191px;
       padding-bottom: 375px;
     }
@@ -84,6 +84,11 @@
     @media screen and (min-width: $tablet) and (max-width: 945px) {
       padding-bottom: 358px;
     }
+
+    @media screen and (min-width: 1900px) {
+      padding-bottom: 388px;
+    }
+
 
     &:after {
       @media screen and (min-width: $tablet) {
