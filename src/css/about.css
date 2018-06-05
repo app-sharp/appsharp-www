@@ -63,6 +63,18 @@
     font-family: $heebo;
     font-weight: $black;
     text-align: center;
+    position: relative;
+
+    &:after {
+      background: $darkGrey url('/img/about/numbers-bg.jpg') repeat right -1px;
+      background-size: 501px 309px;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 100%;
+    }
 
     .container {
       background: $blue;
@@ -70,6 +82,8 @@
       padding: $xl $large;
       border-left: 1px solid white;
       border-right: 1px solid white;
+      position: relative;
+      z-index: 2;
 
       > div {
         margin: 0 auto;
