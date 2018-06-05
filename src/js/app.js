@@ -7,4 +7,3 @@ if ((winWidth <= 767) && ($('.landing').length)) {
     }, 1000);
   });
 }
-

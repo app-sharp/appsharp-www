@@ -1,0 +1,16 @@
+.plain,
+.error {
+  padding: $small 0 $large 0;
+
+  + .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  h2 {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 50px 0;
+  }
+}
