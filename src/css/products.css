@@ -1,4 +1,4 @@
-.product-detail {
+.is-single .product-detail {
   padding: $large 0;
 
   + .footer {
@@ -8,6 +8,10 @@
       width: 100%;
     }
   }
+}
+
+body.products .product-detail {
+  margin: $large 0;
 }
 
 .product {

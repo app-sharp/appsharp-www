@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="{{ $.Site.Language.Lang }}">
   {{ partial "html-head" . }}
-  <body class="{{ .Title | urlize }}">
+  <body class='{{ .Title | urlize }}{{ if eq .Kind "page" }} is-single{{ end }}'>
     {{ block "header" . }}{{ partial "header" . }}{{end}}
     {{ block "main" . }}{{end}}
     {{ block "footer" . }}{{ partial "footer" . }}{{end}}

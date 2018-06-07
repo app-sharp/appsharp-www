@@ -1,0 +1,7 @@
+{{ define "main" }}
+{{ range .Data.Pages }}
+  <section class="product-detail">
+    {{ partial "product" .Params }}
+  </section>
+{{ end }}
+{{end}}
