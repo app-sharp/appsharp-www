@@ -5,7 +5,7 @@ weight: 2
 linksto: "https://app.tasksharp.com"
 
 product: "Taskboard"
-subhead: "Workforce automation management platform"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae arcu sit amet tellus faucibus mollis sodales id massa. Donec non metus eget nibh lacinia lobortis ac vel sem."
-highlight: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae arcu sit amet tellus faucibus mollis sodales id massa."
+subhead: "Business process management platform"
+description: "The Taskboard was created to manage complex business processes. Tired of using sheets spreadsheets and off-the-shelf task management tools, we created a sophisticated platform for managing virtually any business process. Taskboard allows you to define what events initiate the process, who needs to manage each portion of it, and how. Taskboard allows managers to operate their organization and optimize for maximum efficiency."
+highlight: "Please contact us for more information and a demo."
 ---
