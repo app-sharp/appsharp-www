@@ -8,8 +8,8 @@ if (winWidth <= 767) {
       }, 1000);
     });
   } else {
-    $("nav .dropdown").click(function() {
-      window.location.href = "/products/";
+    $("nav .dropdown").on('click touchend',function() {
+      window.location.replace("https://www.appsharp.com/products/");
     });
   }
 }
