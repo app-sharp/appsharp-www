@@ -1,7 +1,7 @@
 ---
 url: "/online-business-card/"
 img: "/img/products/obc.jpg"
-weight: 4
+weight: 5
 linksto: "https://www.wix.com/app-market/online-business-card/overview"
 
 product: "Online Business Card"
