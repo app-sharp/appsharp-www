@@ -1,7 +1,7 @@
 ---
 url: "/biz-me/"
 img: "/img/products/biz-me.jpg"
-weight: 5
+weight: 3
 linksto: "https://www.biz.me"
 
 product: "Biz.me"
