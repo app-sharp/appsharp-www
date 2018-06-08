@@ -2,13 +2,11 @@
   <div class="container">
     <a href="/" class="appsharp-logo"><img src="/img/logo.svg" alt="AppSharp"/></a>
     <nav>
-      <div class="nav-btn dropdown" alt="Products">
-        Products <img src="/img/caret.svg"/>
-        <div class="dropdown-content">
-          {{ range where .Site.RegularPages.ByWeight "Section" "products" }}
-            <a href="{{ .Params.linksto }}" class="sub nav-btn">{{ .Params.product }}</a>
-          {{ end }}
-        </div>
+      <a href="/products/" class="nav-btn dropdown" alt="Products">Products <img src="/img/caret.svg"/></a>
+      <div class="dropdown-content">
+        {{ range where .Site.RegularPages.ByWeight "Section" "products" }}
+          <a href="{{ .Params.linksto }}" class="sub nav-btn">{{ .Params.product }}</a>
+        {{ end }}
       </div>
       <a href="/about" class="nav-btn" alt="About">About</a>
       <a href="/contact" class="nav-btn" alt="Contact">Contact</a>
