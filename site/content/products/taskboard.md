@@ -1,8 +1,8 @@
 ---
 url: "/taskboard/"
 img: "/img/products/taskboard.jpg"
-weight: 2
-linksto: "https://app.tasksharp.com"
+weight: 4
+linksto: "/contact/"
 
 product: "Taskboard"
 subhead: "Business process management platform"
